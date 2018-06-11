@@ -3,8 +3,8 @@ body {
     line-height: 1.8;
     color: #f5f6f7;
 }
-p {font-size: 16px;}
-.margin {margin-bottom: 45px;}
+p,#bul {font-size: 16px;text-align: justify;margin-left: 20%;margin-right: 20%;}
+.margin {margin-bottom: 35px;}
 .bg-1 {
     background-color: #1abc9c; /* Green */
     color: #ffffff;
@@ -22,8 +22,8 @@ p {font-size: 16px;}
     color: #fff;
 }
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 .navbar {
     padding-top: 15px;

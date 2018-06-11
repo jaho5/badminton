@@ -10,10 +10,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="all.css">
 
 </head>
 <body>
+
+
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
@@ -28,23 +30,34 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Critique</a></li>
-        <li><a href="#">Fundamentals</a></li>
+        <li id='ab'><a href="#">About</a></li>
+        <li><a href="critique.html">Critique</a></li>
+        <li><a href="shots.html">Shots</a></li>
+        <li><a href="movement.html">Movement</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="links.html">Links</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<script>
+$("#ab").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#about").offset().top},
+        'slow');
+});
+</script>
+
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <h3 class="margin">Jason Kaming Ho</h3>
-  <img src="images/jkh_bb.jpg" alt="back to camera" class="img-responsive margin" style="display:inline" width="10%" height="10%">
+  <img src="images/jkh_bb.jpg" alt="back to camera" class="img-responsive margin" style="display:inline" width="20%" height="20%">
   <h3>Badminton Player</h3>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
+<div id='about' class="container-fluid bg-2 text-center">
   <h3 class="margin">About</h3>
   <p><span style="font-weight: 400;">My name is Jason Kaming Ho. On this website, I will be introducing basic concepts in badminton, and I will provide my interpretation of them.</span></p>
 <p>&nbsp;</p>
@@ -57,34 +70,39 @@
 <p><span style="font-weight: 400;">Then, if you get the chance to see high-level players on video (which it in itself requires a courtside view to feel the speed and power) or in person on court, you can realize the difference in body movement, shot quality, and power of the sport compared to when played in the backyard. The sport is both very technical and physical, and with this site, I hope to bridge your understanding of what you see and do on the badminton court.</span></p>
 <p>&nbsp;</p>
 <p><span style="font-weight: 400;">However, as a disclaimer, most interpretation of sport and badminton on the site will be strictly from me, a non-professional, and I highly encourage understanding concepts of badminton and sport from the perspective of professionals and coaches. And, in attempts of playing badminton, don&rsquo;t disregard the possibility of injury.</span></p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+<p>&nbsp;</p>
+
 </div>
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">
-  <h3 class="margin">Where To Find Me?</h3><br>
+  <h3 class="margin">Where To Find Me?</h3>
   <div class="row">
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h4>UCSD Main Gym
+        <br><br>
+        Badminton Open Gym
+        <br><br>
+      Friday, Saturday
+      <br><br>
+      6pm-Close</h4>
+    </div>
+    <div class="col-sm-4" >
+      <h4><br><br>Contact me via email:
+        <br><br>
+        ho.jason.main@gmail.com</h4>
     </div>
     <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h4>UCSD Main Gym
+        <br><br>
+        Badminton Club Practice
+        <br><br>
+      Wednesday, Sunday
+      <br><br>
+      8pm-Close, 7pm-Close</h4>
     </div>
   </div>
 </div>
-
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
-</footer>
 
 </body>
 </html>
